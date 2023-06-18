@@ -1,0 +1,35 @@
+.client {
+ font-style: normal;
+    @include font(700, 36px, 1.7, 0.03em);
+   text-align: center;
+   color: rgba(33, 33, 33, 1);
+
+ &__list {
+@include flex;
+   justify-content: center;  
+ }
+
+ &__items {
+    margin-top: 50px;
+   margin-right: 30px   
+ }
+
+ &__icon {
+width: 170px;
+height: 92px;
+border: 1px solid currentColor;
+color: rgba(175, 177, 184, 1);
+fill: currentColor;
+border-radius: 4px;
+text-align: center;
+@include flex;
+justify-content: center;
+
+
+&:hover,
+&:focus {
+border-color: var(--focus-color);
+fill: var(--focus-color);  
+}
+}
+}

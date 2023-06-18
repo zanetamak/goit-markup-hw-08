@@ -1,0 +1,39 @@
+.features {
+padding-bottom: 0;
+
+&__list {
+display: flex;
+}
+
+&__items {
+margin-right: 30px;
+}
+
+&__picture {
+    width: 270px;
+        height: 120px;
+        background: var(--button-background);
+        border-radius: 4px;
+        fill: #212121;
+        @include flex;
+        justify-content: center;    
+        
+        &:last-child {
+            margin-right: 0
+        }
+}
+
+&__title {
+    @include font(700, 18px, 1.5, 0.03em);
+        margin-bottom: 10px;
+        margin-top: 30px
+}
+
+&__p-index {
+   font-family: 'Roboto';
+   font-style: normal;
+   @include font(400, 14px, 1.7, 0.03em);
+   color: var(--second-line-color);   
+}
+
+}

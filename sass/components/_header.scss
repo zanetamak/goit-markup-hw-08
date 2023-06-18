@@ -1,0 +1,91 @@
+
+
+.page-header {
+    background: var(--main-background);
+            border-bottom: var(--border-bottom-color) solid 1px;
+
+&--line {
+    border-bottom: var(--border-bottom-color) solid 1px;
+}
+
+    &__container {
+        @include flex;
+            padding-top: 24px;
+            padding-bottom: 24px;
+    }
+
+&__nav {
+    display: flex;
+    margin-right: auto;
+}
+
+&__nav-list {
+    @include flex;
+    flex-wrap: wrap;
+
+}
+
+&__nav-item {
+    margin-right: 46px;
+    display: inline;
+}
+
+&__contact-item {
+    margin-right: 50px;
+    display: inline;
+}
+
+&__nav-link {
+@include font;
+letter-spacing: 0.02em;
+color: #212121;
+
+&:hover {
+color: var(--focus-color);
+}
+
+&:focus {
+    color: var(--focus-color);
+}
+
+&--current {
+    @include font;
+    color: var(--accent-color);
+    position: relative;
+        display: flex;
+        color: var(--focus-color);
+    
+        &::after {
+            color: var(--focus-color);
+            position: absolute;
+            background-color: var(--focus-color);
+            content: "";
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            bottom: -32px
+        }
+}
+}
+
+&__contact-link {
+text-decoration: inherit;
+@include font;
+color: var(--second-line-color);
+
+&:hover {
+        color: var(--focus-color);
+    }
+
+    &:focus {
+        color: var(--focus-color);
+
+    }
+    
+}
+&__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+}
+

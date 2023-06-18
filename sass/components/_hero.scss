@@ -1,0 +1,46 @@
+.hero {
+background-color: rgba(47, 48, 58, 0.4);
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/background-picture.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0;
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+
+
+&__title-webstudio {
+    @include font(900, 44px, 1.4, 0.06em);
+    text-align: center;
+    white-space: wrap;
+    max-width: 696px;
+    margin: 0 auto;
+    color: var(--main-background);
+}
+
+&__button-position {
+    justify-content: center;
+    @include flex;
+
+}
+
+&__button-webstudio {
+    @include font(700, 16px, 1.8, 0.06em);
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 10px 41px;
+    border-radius: 4px;
+    box-shadow: var(--box-shadow-hero);
+    Background: var(--button-background);
+
+    &:hover {
+    color: var(--main-background);
+    background: var(--focus-color);
+    }
+}
+}

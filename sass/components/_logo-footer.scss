@@ -1,0 +1,12 @@
+.logo {
+    color: var(--focus-color);
+    font-family: 'Raleway';
+    @include font(700, 26px, 1.2, 0.03em);
+
+&__footer-color {
+        color: var(--main-background);
+        font-family: 'Raleway';
+        @include font(700, 26px, 1.2, 0.03em);
+        margin-right: 93px;
+    }
+}
