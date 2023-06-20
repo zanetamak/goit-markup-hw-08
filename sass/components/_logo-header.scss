@@ -1,12 +1,26 @@
+
 .logo {
     color: var(--focus-color);
     font-family: 'Raleway';
-@include font(700, 26px, 1.2, 0.03em);
+@include font(700, 40px, 1.2, 0.03em);
 
 &__header-color {
     color: #000000;
     font-family: 'Raleway';
-@include font(700, 26px, 1.2, 0.03em);
-    margin-right: 93px;
+@include font(700, 24px, 1.2, 0.03em);
+    margin-right: 83px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+    .logo {
+        font-size: 26px;
+
+    &__header-color {
+            color: #000000;
+            font-size: 26px;
+            margin-right: 93px;
+    }
+
 }
 }

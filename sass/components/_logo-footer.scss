@@ -1,12 +1,35 @@
 .logo {
     color: var(--focus-color);
     font-family: 'Raleway';
-    @include font(700, 26px, 1.2, 0.03em);
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            line-height: 1.2;
 
 &__footer-color {
         color: var(--main-background);
-        font-family: 'Raleway';
-        @include font(700, 26px, 1.2, 0.03em);
-        margin-right: 93px;
+        font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            line-height: 1.2;
+            margin-right: 83px;
+
     }
+}
+
+@media screen and (min-width: 1200px) {
+    .logo {
+        font-size: 26px;
+
+        &__footer-color {
+                color: var(--main-background);
+                font-size: 26px;
+                font-weight: 700;
+                letter-spacing: 0.03em;
+                line-height: 1.2;
+                margin-right: 93px;
+        
+            }
+    }
+
 }
