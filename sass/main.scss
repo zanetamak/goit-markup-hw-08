@@ -1,10 +1,13 @@
+
+
+// UTILS
+@import "./utils/mixins";
+@import "./utils/variables";
+
 // BASE
 @import "./common/basic";
 @import "./common/container";
-
-// UTILS
-@import "./utils/variables";
-@import "./utils/mixins";
+@import "./common/section";
 
 // COMPONENTS 
 
@@ -23,5 +26,5 @@
 @import "./components/modal-window";
 @import "./components/modal-window-backdrop";
 @import "./components/checkbox";
-@import "./components/contact";
+@import "./components/mobile-menu";
 

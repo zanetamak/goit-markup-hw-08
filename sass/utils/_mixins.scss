@@ -10,8 +10,8 @@
     letter-spacing: $spacing;
 }
 
-@mixin tablet {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+@mixin tablet { 
+    @media screen and (min-width: 768px) {
         @content;
     }
 }

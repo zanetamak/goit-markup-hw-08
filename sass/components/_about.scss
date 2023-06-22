@@ -1,11 +1,12 @@
 .about {
+  display: none;
 @include font(700, 36px, 1.2, 0.03em);
     text-align: center;
     margin-bottom: 50px;
 
 
 &__list-img {
-  display: flex;   
+  display: none; 
 }
 
 &__img {
@@ -13,7 +14,7 @@ margin-right: 30px;
 position: relative;
 list-style-type: none;
 overflow: hidden;
-display: flex;   
+
 }
 &:last-child {
 margin-right: 0;

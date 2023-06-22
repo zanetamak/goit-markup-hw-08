@@ -1,19 +1,14 @@
 .container {
-    min-width: 320px;
-    max-width: 480px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+    padding: 0 15px;
+    align-items: center;
+    max-width: 480px;
 
-  @media screen and (min-width: 767px) and (max-width: 1199px) {
-    .container {
-        max-width: 768px;
-    }
-}
+   @include tablet {
+    max-width: 768px
+   }
 
-   @media screen and (min-width: 1200px) {
-    .container {
-    max-width: 1200px;
-}
+   @include deskop {
+    max-width: 1200px
+   }
 }
