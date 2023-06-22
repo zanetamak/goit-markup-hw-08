@@ -9,12 +9,19 @@
 
     &__container {
         @include flex;
-        padding-top: 24px;
-        padding-bottom: 24px;
+        padding-top: 10px 0;
+    }
+
+    @include tablet {
+        padding: 21px 0;
+    }
+
+    @include deskop {
+        padding: 24px 0 25px;
     }
 
     &__nav {
-   
+
         display: flex;
         margin-right: auto;
     }
@@ -25,10 +32,11 @@
         flex-wrap: wrap;
 
         @include tablet {
-        @include flex;   
-        flex-wrap: wrap;
+            display: flex;
+        align-items: center;
+            justify-content: space-between
         }
-        }
+    }
 
     &__nav-item {
         margin-right: 46px;
@@ -41,7 +49,7 @@
     }
 
     &__nav-link {
-     
+
         @include font;
         letter-spacing: 0.02em;
         color: #212121;
@@ -55,7 +63,7 @@
         }
 
         &--current {
-        
+
             @include font;
             color: var(--accent-color);
             position: relative;
@@ -74,25 +82,27 @@
             }
         }
     }
-&__contact-item {
-    display: none;
 
-    @include tablet {
-        @include flex;
+    &__contact-item {
+        display: none;
 
-    }
+        @include tablet {
+            @include flex;
 
-    @include deskop {
-        margin-right: 50px;
-        display: inline
+        }
 
-    }
+        @include deskop {
+            margin-right: 50px;
+            display: inline
+        }
+
         &:last-child {
-        margin-right: 0
+            margin-right: 0
+        }
     }
-}
+
     &__contact-link {
-       
+
         text-decoration: inherit;
         @include font;
         color: var(--second-line-color);
@@ -105,45 +115,54 @@
             color: var(--focus-color);
 
         }
-    
 
-@include tablet {
-    padding-top: 10px;
-    text-decoration: inherit;
-        @include font;
-        color: var(--second-line-color);
-    
-        &:hover {
-            color: var(--focus-color);
+
+        @include tablet {
+            margin-top: 10px;
+            padding-right: 15px;
+            text-decoration: inherit;
+        font-size: 12px;
+            font-family: Roboto;
+            font-weight: 500;
+            letter-spacing: 0.24px;
+            color: var(--second-line-color);
+
+            &:hover {
+                color: var(--focus-color);
+            }
+
+            &:focus {
+                color: var(--focus-color);
+
+            }
         }
-    
-        &:focus {
-            color: var(--focus-color);
-    
+
+        @include deskop {
+            font-size: 14px;
+                font-family: Roboto;
+                font-weight: 500;
+                letter-spacing: 0.28px;
         }
-        &:last-child {
-            padding-bottom: 0;
-        }
-        
-}
     }
 
     &__icon {
         fill: currentColor;
-        margin-right: 10px;
-        
+        margin-right: 8px;
+
     }
 
     &__button {
-        width: 40px;
-        height: 40px;
-        background: transparent;
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        border: none;
 
     }
 
 }
-        @include tablet {
-.header-page__button {
-    display: none;
+
+@include tablet {
+    .header-page__button {
+        display: none;
+    }
 }
-        }

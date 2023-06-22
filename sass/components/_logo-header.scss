@@ -1,27 +1,26 @@
 
+
 .logo {
 
     color: var(--focus-color);
     font-family: 'Raleway';
 @include font(700, 40px, 1.2, 0.03em);
 
+
 &__header-color {
     color: #000000;
     font-family: 'Raleway';
 @include font(700, 24px, 1.2, 0.03em);
     margin-right: 83px;
+
+
 }
+
+@include tablet {
+    padding-left: 15px;
 }
 
-@media screen and (min-width: 1200px) {
-    .logo {
-        font-size: 24px;
-
-    &__header-color {
-            color: #000000;
-            font-size: 24px;
-            margin-right: 93px;
-    }
-
+@include deskop {
+    margin-right: 93px;
 }
 }
