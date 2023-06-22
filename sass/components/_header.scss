@@ -20,20 +20,24 @@
     }
 
     &__nav-list {
-display:none;
+        display: none;
         align-items: center;
         flex-wrap: wrap;
 
-    }
+        @include tablet {
+        @include flex;   
+        flex-wrap: wrap;
+        }
+        }
 
     &__nav-item {
         margin-right: 46px;
         display: inline;
-    }
 
-    &__contact-item {
-        margin-right: 50px;
-        display: none;
+        @include tablet {
+            margin-right: 60px;
+        }
+
     }
 
     &__nav-link {
@@ -70,8 +74,25 @@ display:none;
             }
         }
     }
+&__contact-item {
+    display: none;
 
+    @include tablet {
+        @include flex;
+
+    }
+
+    @include deskop {
+        margin-right: 50px;
+        display: inline
+
+    }
+        &:last-child {
+        margin-right: 0
+    }
+}
     &__contact-link {
+       
         text-decoration: inherit;
         @include font;
         color: var(--second-line-color);
@@ -84,12 +105,33 @@ display:none;
             color: var(--focus-color);
 
         }
+    
 
+@include tablet {
+    padding-top: 10px;
+    text-decoration: inherit;
+        @include font;
+        color: var(--second-line-color);
+    
+        &:hover {
+            color: var(--focus-color);
+        }
+    
+        &:focus {
+            color: var(--focus-color);
+    
+        }
+        &:last-child {
+            padding-bottom: 0;
+        }
+        
+}
     }
 
     &__icon {
         fill: currentColor;
         margin-right: 10px;
+        
     }
 
     &__button {
@@ -97,8 +139,11 @@ display:none;
         height: 40px;
         background: transparent;
 
-        @include tablet {
-          display: none  
-        }
     }
+
 }
+        @include tablet {
+.header-page__button {
+    display: none;
+}
+        }
