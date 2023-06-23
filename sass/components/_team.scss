@@ -1,26 +1,38 @@
 .team {
-   display: none;
    background: var(--button-background);
    align-items: center;
    justify-content: center;
 
+&__container {
+      margin-top: 30px;
+      display: flex;
+         flex-direction: column;
+         }
+
 &__title {
-    @include font(700, 36px, 1.7, 0.03em);
+    @include font(700, 28px, 1.7, 0.03em);
    text-align: center;
-   margin-bottom: 50px;
+
+
+   @include deskop {
+     font-size: 36px; 
+   }
 } 
 
 &__list {
-display: flex
-} 
-
-&__container {
-margin-right: 30px;
 display: flex;
 flex-direction: column;
+align-items: center;
+justify-content: center;
+
+@include tablet {
+   flex-direction: row;
+   flex-wrap: wrap
+}
 }
 
 &__figcaption {
+   
 box-shadow: var(--box-shadow-team);
 border-radius: 0px 0px 4px 4px;
 padding-top: 30px;
@@ -61,6 +73,7 @@ margin-right: 10px;
     margin-right: 0;   
 }
 }
+
 
 &__social-link {
         fill: rgba(175, 177, 184, 1);

@@ -66,18 +66,20 @@
 }
 
     &__title-webstudio {
-        @include font(900, 24px, 1.61, 0.06em); //* nie robią sie 2 linie tekstu tylko 3 //
+        @include font(900, 26px, 1.61, 0.06em); //* nie robią sie 2 linie tekstu tylko 3 //
         text-align: center;
+        max-width: 365px;
         white-space: wrap;
-        max-width: 366px;
+
         margin: 0 auto;
         color: var(--main-background);
-    }
 
     @include deskop {
-        @include font(900, 44px, 1.36, 0.06em)
+        @include font(900, 44px, 1.36, 0.06em);
+        max-width: 696px;
   
     }
+}
 
     &__button-position {
         justify-content: center;

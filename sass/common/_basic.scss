@@ -50,3 +50,18 @@ a:link {
     font-family: inherit;
 
 }
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 480px;
+    width: 100%;
+
+    @include tablet {
+max-width: 768px
+    }
+
+    @include deskop {
+        max-width: 1200px
+    }
+}

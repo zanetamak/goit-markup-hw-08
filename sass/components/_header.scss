@@ -3,10 +3,6 @@
     background: var(--main-background);
     border-bottom: var(--border-bottom-color) solid 1px;
 
-    &--line {
-        border-bottom: var(--border-bottom-color) solid 1px;
-    }
-
     &__container {
         @include flex;
         padding-top: 10px 0;
@@ -151,14 +147,13 @@
 
     }
 
-    &__button {
-        width: 20px;
-        height: 20px;
-        background-color: transparent;
-        border: none;
+}
 
-    }
-
+.mobile-menu__button {
+    border: none;
+    width: 40px;
+    height: 40px;
+    
 }
 
 @include tablet {
