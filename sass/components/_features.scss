@@ -1,17 +1,37 @@
 .features {
-    display: none;
 padding-bottom: 0;
 
 &__list {
 display: flex;
+flex-direction: column;
+gap: 30px;
+
+@include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @include deskop {
+       flex-direction: row;
+        justify-content: center;
+        
+    }
 }
 
 &__items {
-margin-right: 30px;
+max-width: 450px;
+
+    @include tablet {
+        max-width: 354px;
+    }
+
+    @include deskop {
+        max-width: 270px
+    }
 }
 
 &__picture {
-    width: 270px;
+  
         height: 120px;
         background: var(--button-background);
         border-radius: 4px;
@@ -27,7 +47,8 @@ margin-right: 30px;
 &__title {
     @include font(700, 18px, 1.5, 0.03em);
         margin-bottom: 10px;
-        margin-top: 30px
+        margin-top: 30px;
+        text-align: center
 }
 
 &__p-index {
