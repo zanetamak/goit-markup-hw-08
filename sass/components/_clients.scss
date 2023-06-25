@@ -1,18 +1,25 @@
 .client {
-    display: none;
  font-style: normal;
     @include font(700, 36px, 1.7, 0.03em);
    text-align: center;
    color: rgba(33, 33, 33, 1);
 
  &__list {
-display:none;
-   justify-content: center;  
+display: flex;
+gap: 30px;
+justify-content: center;
+flex-wrap: wrap;
+margin: 0 auto;
+
+@include deskop {
+      flex-wrap: nowrap;  /* czy musi być tu wrap? */
+      display: flex;
+      gap: 30px;
+}
  }
 
  &__items {
-    margin-top: 50px;
-   margin-right: 30px   
+    margin-top: 50px;  
  }
 
  &__icon {
