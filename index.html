@@ -140,198 +140,253 @@
         <!--Team-->
         <section class="team section">
             <div class="container">
-                <h2 class="team__title">Nasz zespół</h2>
-                <ul class="team__list list">
-                    <li class="team__container">
-                        <figure class="team__container list">
-                            <img src="./images/team/pracownik1.jpg"
-                               alt="pracownik1"
-                            width="270"
-                            height="260"
-                         
-                            srcset="./images/team/pracownik1.jpg x1,
-                            ./images/team/team/imgpracownik1@2x(1) x2,
-                            ./images/team/team/imgpracownik1mobile@1x(1) x1,
-                            ./images/team/team/imgpracownik1mobile@2x(1) x2,
-                            ./images/team/team/imgpracownik1tablet@1x(1) x1,
-                            ./images/team/team/imgpracownik1tablet@2x(1) x2,
-                            "/>
-                            <figcaption class="team__figcaption">
-                                <h3 class="team__index-name">John Doe</h3>
-                                <p class="team__index-position">Product Designer</p>
-                                <ul class="team__social-media list">
-                                    <li class="team__social-icons">
-                                        <a class="team__social-link" href="">
-                                            <svg class="team__social-icon" width=20 heigh=20>
-                                                <use href="./images/icons.svg#icon-instagram-2"></use>
-                                            </svg></a>
-                                    </li>
-                                    <li class="team__social-icons">
-                                        <a class="team__social-link" href="">
-                                            <svg class="team__social-icon" width=20 heigh=20>
+                <h2 class="team__h2">Nasz zespół</h2>
+        
+                <ul class="team__block list">
+                    <li class="team__frame">
+                        <img src="./images/team/pracownik1.jpg" 
+                        alt="smiling man" 
+                        type="jpg"
+                        class="team__img"
+                        />
+                        <source 
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/team/imgpracownik1mobile@1x(1).jpg 1x,
+                           ./images/team/imgpracownik1mobile@2x(1).jpg 2x"
+                            sizes="(min-width: 320px) 450px" 
+                            />
+                        <source media="(min-width: 768px)"
+                        scret="
+                            ./images/team/impracownik1tablet@1x.jpg 1x,
+                           ./images/team/impracownik1tablet@2x 2x
+                        "  sizes="(min-width: 768px) 354px" 
+                        />
+                        <source 
+                        media="(min-width: 1200px)" 
+                        srcset="
+                            ./images/team/pracownik1.jpg 1x,
+                           ./images/imgpracownik1@2x(1).jpg 2x"
+                           sizes="(min-width: 1200px) 270px">
+                        <div class="team__under--photo">
+                            <h3 class="team__name">John Doe</h3>
+                            <p class="team__work--position">Product Designer</p>
+                            <ul class="team__social--media">
+                                <li>
+                                    <a href="#" class="team__media--icon">
+                                        <svg class="team__icon" width="20px" height="20px">
+                                            <use href="./images/icons.svg#icon-instagram-2"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+        
+                                <li>
+                                    <a href="#" class="team__media--icon">
+                                        <svg class="team__icon" width="20px" height="20px">
                                                 <use href="./images/icons.svg#icon-twitter-1"></use>
-                                            </svg></a>
-                                    </li>
-                                    <li class="team__social-icons">
-                                        <a class="team__social-link" href="">
-                                            <svg class="team__social-icon" width=20 heigh=20>
-                                                <use href="./images/icons.svg#icon-facebook-1"></use>
-                                            </svg></a>
-                                    </li>
-                                    <li class="team__social-icons">
-                                        <a class="team__social-link" href="">
-                                            <svg class="team__social-icon" width=20 heigh=20>
-                                                <use href="./images/icons.svg#icon-linkedin-1"></use>
-                                            </svg></a>
-                                    </li>
-                                </ul>
-                            </figcaption>
-                        </figure>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="team__media--icon">
+                                        <svg class="team__icon" width="20px" height="20px">
+                                        <use href="./images/icons.svg#icon-facebook-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="team__media--icon">
+                                        <svg class="team__icon" width="20px" height="20px">
+                                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+        
+                    <li class="team__frame">
+                        <img src="./images/team/pracownik2.jpg" 
+                        alt="blond woman smiling" 
+                        type="jpg"
+                        class="team__img"/>
+                        <source media="(min-width: 320px)" 
+                        srcset="
+                           ./images/team/imgpracownik2mobile@1x(1).jpg 1x,
+                           ./images/team/imgpracownik2mobile@2x(1).jpg 2x"
+                          sizes="(min-width: 320px) 450px" 
+                            />
+                        <source media="(min-width: 768px)"
+                        scret="
+                            ./images/team/imgpracownik2tablet@1x(1).jpg 1x,
+                            ./images/team/imgpracownik2tablet@2x(1).jpg 2x
+                          "  sizes="(min-width: 768px) 354px" 
+                        />
+                        <source 
+                        media="(min-width: 1200px)" 
+                        srcset="
+                            ./images/team/pracownik2.jpg 1x,
+                            ./images/team/pracownik2@2x(1).jpg 2x"
+                         sizes="(min-width: 1200px) 270px">
+                        <div class="team__under--photo">
+                            <h3 class="team__name">John Doe</h3>
+                            <p class="team__work--position">Frontend Developer</p>
+                            <ul class="team__social--media">
+                                <li>
+                                    <a href="#" class="team__media--icon">
+                                        <svg class="team__icon" width="20px" height="20px">
+                                            <use href="./images/icons.svg#icon-instagram-2"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="team__media--icon">
+                                        <svg class="team__icon" width="20px" height="20px">
+                                                <use href="./images/icons.svg#icon-twitter-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="team__media--icon">
+                                        <svg class="team__icon" width="20px" height="20px">
+                                        <use href="./images/icons.svg#icon-facebook-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="team__media--icon">
+                                        <svg class="team__icon" width="20px" height="20px">
+                                            <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+        
+                    <li class="team__frame">
+                        <img src="./images/team/pracownik31.jpg" 
+                        alt="smiling man"
+                             type="jpg"
+                        class="team__img" />
+                        <source media="(min-width: 320px)" 
+                        srcset="
+                           ./images/team/imgpracownik3mobile@1x(1).jpg 1x,
+                           /images/team/imgpracownik3mobile@2x(1).jpg 2x
+                          "
+                          sizes="(min-width: 320px) 450px" 
+                            />
+                        <source media="(min-width: 768px)"
+                        scret="
+                            ./images/team/imgpracownik3tablet@1x(1).jpg 1x,
+                           ./images/team/imgpracownik3tablet@1x(1).jpg 2x
+                         "  sizes="(min-width: 768px) 354px" 
+                        />
+                        <source 
+                        media="(min-width: 1200px)" 
+                        srcset="
+                            ./images/team/pracownik31.jpg 1x,
+                           ./images/team/pracownik3@2x(1) 2x
+                          " sizes="(min-width: 1200px) 270px">
+                        <div class="team__under--photo">
+                            <h3 class="team__name">John Doe</h3>
+                            <p class="team__work--position">Marketing</p>
+        
+                            <ul class="team__social--media">
+                                <li>
+                                    <a href="#" class="team__media--icon">
+                                        <svg class="team__icon" width="20px" height="20px">
+                                            <use href="./images/icons.svg#icon-instagram-2"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="team__media--icon">
+                                        <svg class="team__icon" width="20px" height="20px">
+                                                <use href="./images/icons.svg#icon-twitter-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="team__media--icon">
+                                        <svg class="team__icon" width="20px" height="20px">
+                                        <use href="./images/icons.svg#icon-facebook-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="team__media--icon">
+                                        <svg class="team__icon" width="20px" height="20px">
+                                            <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+        
+                    <li class="team__frame">
+                        <img src="./images/team/pracownik4.jpg" 
+                        alt="man with glasses"
+                        type="jpg"
+                        class="team__img" />
+                        <source media="(min-width: 320px)" 
+                        srcset="
+                           ./images/team/impracownik4mobile@1x(1).jpg 1x,
+                            ./images/team/impracownik4mobile@2x(1).jpg 2x
+                          "
+                          sizes="(min-width: 320px) 450px" 
+                            />
+                        <source media="(min-width: 768px)"
+                        scret="
+                             ./images/team/impracownik4tablet@1x(1).jpg 1x,
+                           ./images/team/impracownik4tablet@12(1).jpg 2x
+                          "  sizes="(min-width: 768px) 354px" 
+                        />
+                        <source 
+                        media="(min-width: 1200px)" 
+                        srcset="
+                            ./images/team/pracownik4.jpg 1x,
+                           ./images/team/imgpracownik4@2x(1).jpg 2x
+                          " sizes="(min-width: 1200px) 270px">
+                        <div class="team__under--photo">
+                            <h3 class="team__name">John Doe</h3>
+                            <p class="team__work--position">UI Designer</p>
+        
+                            <ul class="team__social--media">
+                                <li>
+                                    <a href="#" class="team__media--icon">
+                                        <svg class="team__icon" width="20px" height="20px">
+                                            <use href="./images/icons.svg#icon-instagram-2"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="team__media--icon">
+                                        <svg class="team__icon" width="20px" height="20px">
+                                                <use href="./images/icons.svg#icon-twitter-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="team__media--icon">
+                                        <svg class="team__icon" width="20px" height="20px">
+                                        <use href="./images/icons.svg#icon-facebook-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="team__media--icon">
+                                        <svg class="team__icon" width="20px" height="20px">
+                                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                        </svg>
+                                    </a>
+                        </div>
                     </li>
                 </ul>
-                <ul class="team__list list">
-                    <li>
-                        <figure class="team__container list">
-                            <img src="./images/team/pracownik2.jpg" 
-                            width="270"
-                            height="260"
-                            alt="pracownik2"
-                              srcset="./images/team/pracownik2.jpg x1,
-                            ./images/team/team/imgpracownik2@2x(1) x2,
-                            ./images/team/team/imgpracownik2mobile@1x(1) x1,
-                            ./images/team/team/imgpracownik2mobile@2x(1) x2,
-                            ./images/team/team/imgpracownik2tablet@1x(1) x1,
-                            ./images/team/team/imgpracownik2tablet@2x(1) x2,
-                            ">
-                            <figcaption class="team__figcaption">
-                                <h3 class="team__index-name">John Doe</h3>
-                                <p class="team__index-position">Fronted Developer</p>
-                                <ul class="team__social-media list">
-                                    <li class="team__social-icons">
-                                        <a class="team__social-link" href="">
-                                            <svg class="team__social-icon" width=20 heigh=20>
-                                                <use href="./images/icons.svg#icon-instagram-2"></use>
-                                            </svg></a>
-                                    </li>
-                                    <li class="team__social-icons">
-                                        <a class="team__social-link" href="">
-                                            <svg class="team__social-icon" width=20 heigh=20>
-                                                <use href="./images/icons.svg#icon-twitter-1"></use>
-                                            </svg></a>
-                                    </li>
-                                    <li class="team__social-icons">
-                                        <a class="team__social-link" href="">
-                                            <svg class="team__social-icon" width=20 heigh=20>
-                                                <use href="./images/icons.svg#icon-facebook-1"></use>
-                                            </svg></a>
-                                    </li>
-                                    <li class="team__social-icons">
-                                        <a class="team__social-link" href="">
-                                            <svg class="team__social-icon" width=20 heigh=20>
-                                                <use href="./images/icons.svg#icon-linkedin-1"></use>
-                                            </svg></a>
-                                    </li>
-                                </ul>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
-                <ul class="team__list list">
-                <li>
-                        <figure class="team__container list">
-                            <img src="./images/team/pracownik3.jpg"
-                               width="270"
-                            height="260"
-                            alt="pracownik3"
-                              srcset="./images/team/pracownik3.jpg x1,
-                            ./images/team/team/imgpracownik3@2x(1) x2,
-                            ./images/team/team/imgpracownik3mobile@1x(1) x1,
-                            ./images/team/team/imgpracownik3mobile@2x(1) x2,
-                            ./images/team/team/imgpracownik3tablet@1x(1) x1,
-                            ./images/team/team/imgpracownik3tablet@2x(1) x2,
-                            ">
-                            <figcaption class="team__figcaption">
-                                <h3 class="team__index-name">John Doe</h3>
-                                <p class="team__index-position">Marketing</p>
-                                <ul class="team__social-media list">
-                                    <li class="team__social-icons">
-                                        <a class="team__social-link" href="">
-                                            <svg class="team__social-icon" width=20 heigh=20>
-                                                <use href="./images/icons.svg#icon-instagram-2"></use>
-                                            </svg></a>
-                                    </li>
-                                    <li class="team__social-icons">
-                                        <a class="team__social-link" href="">
-                                            <svg class="team__social-icon" width=20 heigh=20>
-                                                <use href="./images/icons.svg#icon-twitter-1"></use>
-                                            </svg></a>
-                                    </li>
-                                    <li class="team__social-icons">
-                                        <a class="team__social-link" href="">
-                                            <svg class="team__social-icon" width=20 heigh=20>
-                                                <use href="./images/icons.svg#icon-facebook-1"></use>
-                                            </svg></a>
-                                    </li>
-                                    <li class="team__social-icons">
-                                        <a class="team__social-link" href="">
-                                            <svg class="team__social-icon" width=20 heigh=20>
-                                                <use href="./images/icons.svg#icon-linkedin-1"></use>
-                                            </svg></a>
-                                    </li>
-                                </ul>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
-                <ul class="team__list list">
-                    <li>
-                        <figure class="team__container list">
-                            <img src="./images/team/pracownik4.jpg"    
-                            width="270"
-                            height="260"
-                            alt="pracownik2"
-                              srcset="./images/team/pracownik4.jpg x1,
-                            ./images/team/team/imgpracownik4@2x(1) x2,
-                            ./images/team/team/imgpracownik4mobile@1x(1) x1,
-                            ./images/team/team/imgpracownik4mobile@2x(1) x2,
-                            ./images/team/team/imgpracownik4tablet@1x(1) x1,
-                            ./images/team/team/imgpracownik4tablet@2x(1) x2,
-                            ">
-                            <figcaption class="team__figcaption">
-                                <h3 class="team__index-name">John Doe</h3>
-                                <p class="team__index-position">UI Designer</p>
-                                <ul class="team__social-media list">
-                                    <li class="team__social-icons">
-                                        <a class="team__social-link" href="">
-                                            <svg class="team__social-icon" width=20 heigh=20>
-                                                <use href="./images/icons.svg#icon-instagram-2"></use>
-                                            </svg></a>
-                                    </li>
-                                    <li class="team__social-icons">
-                                        <a class="team__social-link" href="">
-                                            <svg class="team__social-icon" width=20 heigh=20>
-                                                <use href="./images/icons.svg#icon-twitter-1"></use>
-                                            </svg></a>
-                                    </li>
-                                    <li class="team__social-icons">
-                                        <a class="team__social-link" href="">
-                                            <svg class="team__social-icon" width=20 heigh=20>
-                                                <use href="./images/icons.svg#icon-facebook-1"></use>
-                                            </svg></a>
-                                    </li>
-                                    <li class="team__social-icons">
-                                        <a class="team__social-link" href="">
-                                            <svg class="team__social-icon" width=20 heigh=20>
-                                                <use href="./images/icons.svg#icon-linkedin-1"></use>
-                                            </svg></a>
-                                    </li>
-                                </ul>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
-                    </div>
+            </div>
         </section>
+
         <section class="client-section section">
             <div class="container">
                 <h2 class="client">Nasi klienci</h2>

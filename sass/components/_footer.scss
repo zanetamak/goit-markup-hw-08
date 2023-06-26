@@ -1,6 +1,6 @@
 .footer {
-
     background: var(--footer-color);
+    padding-top: 60px;
     padding-bottom: 60px;
 
 &__flex {
@@ -98,7 +98,11 @@ padding-top: 20px;
    text-transform: uppercase;
    color: var(--main-background);
    
+
+
+    @include deskop {
     text-align: left;
+    }
 }
 
 &__social-container {
@@ -149,6 +153,7 @@ fill: var(--main-background);
         margin-bottom: 65px;
         margin-left: 144px;
         justify-content: center;
+    
     }
 
     @include deskop {
@@ -183,12 +188,13 @@ font-family: "Roboto";
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 20px;
-    text-align: left;
+  
     display: block;
     margin-top: 60px;
 
     @include deskop {
-        flex-direction: column
+        flex-direction: column;
+        text-align: left;
     }
 }
 

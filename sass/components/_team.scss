@@ -1,123 +1,103 @@
 .team {
-   background: var(--button-background);
-   align-items: center;
-   justify-content: center;
+   background: #f5f4fa;
 
-&__container {
-      margin-top: 30px;
+   &__h2 {
+      color: #212121;
+      font-size: 36px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin-bottom: 50px;
+   }
+
+   &__block {
       display: flex;
-      flex-direction: column;  
-         align-items: center;
-         margin-left: 0 auto;
+      gap: 30px;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0 auto;
 
       @include tablet {
          flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-         }
-
-                    @include deskop {
-                       display: flex;
-                       gap: 30px;
-                       flex-direction: row;
-                       justify-content: center;
-         }
+         flex-wrap: wrap;
+         justify-content: center;
       }
 
-&__title {
-    @include font(700, 28px, 1.7, 0.03em);
-   text-align: center;
-
-
-   @include deskop {
-     font-size: 36px; 
-   }
-} 
-
-&__list {
-display: flex;
-align-items: center;
-justify-content: center;
-}
-
-&__figcaption {
-   
-box-shadow: var(--box-shadow-team);
-border-radius: 0px 0px 4px 4px;
-padding-top: 30px;
-padding-bottom: 30px;
-height: 168px;
-background: var(--main-background);    
-
-@include tablet {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
+      @include deskop {
+         display: flex;
+         gap: 30px;
+         flex-direction: row;
+         justify-content: center;
+      }
    }
 
-   @include deskop {
+   &__frame {
+      width: 270px;
+      background: #ffffff;
+      /* material shadow v1 */
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+         0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+   }
+
+   &__under--photo {
+      padding-top: 30px;
+      padding-bottom: 30px;
+   }
+
+   &__name {
+      color: #212121;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 500;
+      text-align: center;
+      letter-spacing: 0.03em;
+   }
+
+   &__work--position {
+      color: #757575;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 400;
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin-top: 10px;
+   }
+
+   &__social--media {
       display: flex;
-  
-      flex-direction: row;
+      margin-top: 16px;
       justify-content: center;
+      gap: 10px;
+      list-style-type: none;
    }
 
+   &__media--icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #afb1b8;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+
+   &__media--icon:hover,
+   &__media--icon:focus {
+      background-color: #2196f3;
+      color: #fff;
+   }
+
+   &__icon {
+      fill: currentColor;
+   }
 }
 
-&__index-name {
-   font-family: 'Roboto';
-@include font(500, 16px, 1.2, 0.03em);
-   text-align: center;
-}
-
-&__index-position {
-font-family: 'Roboto';
-@include font(700, 16px, 1.2, 0.03em);
-text-align: center;
-margin-top: 10px;
-margin-bottom: 16px;
-color: var(--second-line-color)
-}
-
-&__social-media {
-display: flex;
-justify-content: center;
-list-style: none;
-
-}
-
-&__social-icons {
- width: 44px;
-height: 44px;
-margin-right: 10px;   
-
-
-&:last-child {
-    margin-right: 0;   
-}
-}
-
-
-&__social-link {
-        fill: rgba(175, 177, 184, 1);
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-
-
-&:hover {
-     fill: var(--main-background);
-   background-color: var(--focus-color);
-   border-radius: 50%;
-}  
-
-&:focus {
-    fill: var(--main-background);
-    background-color: var(--focus-color);
-    border-radius: 50%;
-}
-}
-
-
+.team__img {
+         width: 100%;
+         height: auto;
+         object-fit: cover;
 }
