@@ -1,35 +1,74 @@
 .footer {
-    display: none;
+
     background: var(--footer-color);
-    padding-top: 60px;
     padding-bottom: 60px;
 
-
 &__flex {
-    display: flex;
+    text-align: center;
+        padding: 0 15px;
+    
+        @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+          
+
+@include deskop {
+display: flex;
 align-items: baseline;
+padding: 0;
+
+}
+    }
 }
 
 &__div {
-    margin-right: 70px;
+    justify-content: center;
+    
+    @include tablet {
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-bottom: 0;
+            margin-left: 15px;
+            margin-right: 70px;
+}
+
+@include deskop {
+    margin-left: 0;
+}
 }
 
 &__contact {
 padding-top: 20px;
     list-style-type: none;
+    text-align: center;
+
+    @include tablet {
+        justify-content: center;
+    
+
+    @include deskop {
+        text-align: left;
+    }
+}
 }
 
 &__contact-item {
-    padding-top: 9px;
+    padding-top: 8px;
+    flex-direction: column;
 
+@include deskop {
+        text-align: left;
 
-    &:first-child {
-    margin-top: 0px;
+    &:last-child {
+    padding-top: 0px;
+
     }
+}
 }
 
 &__contactline {
     font-style: normal;
+
     @include font(400, 14px, 1.7, 0.03em);
     color: rgba(255, 255, 255, 0.6);
 
@@ -40,6 +79,8 @@ padding-top: 20px;
     &:focus {
         color: var(--focus-color)
     }
+
+
 }
 
 &__contactline--adress {
@@ -54,15 +95,21 @@ padding-top: 20px;
 
 &__social-title {
     @include font(700, 14px, 1.7, 0.03em);
-   margin-right: 70px;
    text-transform: uppercase;
    color: var(--main-background);
+   
+    text-align: left;
 }
 
 &__social-container {
 margin-top: 20px;
+
     @include flex;
-    justify-content: center
+    justify-content: center;
+
+    @include deskop {
+        gap: 0;
+    }
 }
 
 &__social-icons {
@@ -97,43 +144,95 @@ fill: var(--main-background);
 }
 }
 
+&__join {
+    @include tablet {
+        margin-bottom: 65px;
+        margin-left: 144px;
+        justify-content: center;
+    }
+
+    @include deskop {
+        margin-left: 0px;
+    }
+}
+
 &__newsletter {
-margin-left: 77px
+justify-content: center;
+text-align: center;
+
+
+@include tablet {
+        justify-content: center;
+        align-items: center;
+        margin-left: 151px;
+
+    @include deskop {
+        margin-left: 78px;
+        
+}
+}
 }
 
 &__submit {
-display: flex;
-flex-direction: column;
-@include font(700, 14px, 1.1, 0.03em);
-margin-bottom: 20px;
-margin-right: 77px;
-text-transform: uppercase;
-color: var(--main-background)
+font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: left;
+    display: block;
+    margin-top: 60px;
+
+    @include deskop {
+        flex-direction: column
+    }
 }
 
 &__input {
-box-sizing: border-box;
-width: 358px;
-height: 50px;
-border: 1px solid rgba(255, 255, 255, 0.3);
-padding-left: 16px;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
-background: var(--footer-color)
+    
+width: 100%;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2f303a;
+    padding-left: 16px;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include tablet {
+        display: flex;
+        width: 450px;
+
+    @include deskop {
+        width: 358px;
+}
+}
 }
 
 &__button {
 width: 200px;
 height: 50px;
 @include font(700, 16px, 1.8, 0.06em);
-margin-left: 12px;
 color: var(--main-background);
  background: var(--focus-color);
 box-shadow: var(--box-shadow-hero);
 border-radius: 4px;
 cursor: pointer;
 justify-content: space-between;
- 
+margin-top: 20px;
+
+@include deskop {
+width: 200px;
+    margin-top: 0;
+
+    margin-left: 12px;
+    
+}
 }
 
 &__icon-send {
@@ -142,4 +241,12 @@ justify-content: space-between;
     vertical-align: middle;
 }
 
+&__newsletter-wrapper {
+    @include deskop {
+        display: flex;
+            flex-direction: row;
+            padding-bottom: 40px;
+            padding-left: 0px;
+    }
+}
 }

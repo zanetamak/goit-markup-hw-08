@@ -23,7 +23,7 @@ margin: 0 auto;
  }
 
  &__icon {
-width: 170px;
+width: 210px;
 height: 92px;
 border: 1px solid currentColor;
 color: rgba(175, 177, 184, 1);
@@ -38,6 +38,14 @@ justify-content: center;
 &:focus {
 border-color: var(--focus-color);
 fill: var(--focus-color);  
+}
+
+@include tablet {
+width: 226px;
+}
+
+@include deskop {
+   width: 170px;
 }
 }
 }

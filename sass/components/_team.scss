@@ -7,12 +7,22 @@
       margin-top: 30px;
       display: flex;
       flex-direction: column;  
+         align-items: center;
+         margin-left: 0 auto;
 
       @include tablet {
-            flex-direction: row;
-            flex-wrap: wrap
+         flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
          }
+
+                    @include deskop {
+                       display: flex;
+                       gap: 30px;
+                       flex-direction: row;
+                       justify-content: center;
          }
+      }
 
 &__title {
     @include font(700, 28px, 1.7, 0.03em);
@@ -38,6 +48,20 @@ padding-top: 30px;
 padding-bottom: 30px;
 height: 168px;
 background: var(--main-background);    
+
+@include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   @include deskop {
+      display: flex;
+  
+      flex-direction: row;
+      justify-content: center;
+   }
+
 }
 
 &__index-name {
@@ -94,4 +118,6 @@ margin-right: 10px;
     border-radius: 50%;
 }
 }
+
+
 }

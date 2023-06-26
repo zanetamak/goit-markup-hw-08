@@ -1,10 +1,9 @@
 
-
 .logo {
 
     color: var(--focus-color);
     font-family: 'Raleway';
-@include font(700, 40px, 1.2, 0.03em);
+@include font(700, 34px, 1.2, 0.03em);
 
 
 &__header-color {
