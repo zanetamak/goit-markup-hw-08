@@ -65,8 +65,9 @@ max-width: 370px;
     background-color: var(--focus-color);
      padding: 10px 76px;
     margin: 0 auto;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, .15);
 }
 
 &__button-position {

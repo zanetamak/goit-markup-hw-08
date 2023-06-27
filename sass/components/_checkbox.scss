@@ -1,9 +1,9 @@
 .checkbox {
-@include font(400, 12px, 1.7, 0.03em);
+@include font(400, 12px, 1.7, 0.36px);
     display: flex;
     align-items: center;
     margin-top: 20px;
-    max-width: 370px;
+
 
     
 @include deskop {
@@ -38,8 +38,9 @@
     }
 
     &__text {
-display: flex;
-align-items: left;
+      display: flex;
+      align-items: left;
+       padding-left: 7px;
         @include deskop {
         display: inline;
         }

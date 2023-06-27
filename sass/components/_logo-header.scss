@@ -11,15 +11,13 @@
     font-family: 'Raleway';
 @include font(700, 26px, 1.2, 0.03em);
     margin-right: 83px;
-
-
 }
 
 @include tablet {
-    padding-left: 15px;
+  
 }
 
 @include deskop {
-    margin-right: 93px;
+  
 }
 }
