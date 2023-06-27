@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <header class="page-header page-header--line">
+    <header class="page-header">
         <div class="container">
             <div class="page-header__container">
                 <nav class="page-header__nav">
@@ -48,10 +48,13 @@
                             </svg>+48 111 111 111</a>
                     </li>
                 </ul>
-            <button type="button" class="header-page__button js-open-menu"
+
+                <!--button mobile -->
+            <button type="button" 
+            class="menu-toggle js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu">
-          <svg class="mobile-menu__button">
+          <svg class="menu-toggle__button" width="40px" height="40px">
             <use href="./images/icons.svg#icon-menu_40px-2"></use>
           </svg>
         </button>
@@ -502,41 +505,54 @@
     </footer>
     <!--mobile menu-->
 <div class="menu-container js-menu-container" id="mobile-menu">
-<button type="button" class="menu-container__close-btn js-close-menu">
-    <svg width="40" height="40">
-        <use href="./images/icons.svg#icon-close_40px">
-        </use>
-    </svg>
-</button>
-<div class="mobile-social">
-            <ul class="mobile-social list">
-                <li class="mobile-social__pages"><a href="./index.html"
-                        class="mobile-social__link">Agencja</a></li>
-                <li class="mobile-social__pages"><a href="./portfolio.html"
-                        class="mobile-social__link">Portfolio</a></li>
-                <li class="mobile-social__pages"><a href="#" class="mobile-social__link">Kontakt</a></li>
-            </ul>
-            </div>
-        <ul class="mobile-social__contact list">
-            <li class="mobile-social__contact-list">
-                <a href="tel:+48111111111" class="mobile-social__contact-link">+48 111 111 111</a>
+    <button type="button" class="menu-toggle js-close-menu">
+        <svg class="menu-toggle__button" width="40px" height="40px">
+            <use href="./images/icons.svg#icon-close_40px"></use>
+        </svg>
+    </button>
+    <ul class="menu-container__mobile-menu list">
+        <li class="menu-container__mobile-menu-item">
+            <a href="./index.html" class="menu-container__mobile-menu-link">Agencja</a>
+        </li>
+        <li class="menu-container__mobile-menu-item">
+            <a href="./portfolio.html" class="menu-container__mobile-menu-link">Portfolio</a>
+        </li>
+        <li class="menu-container__mobile-menu-item">
+            <a href="#" class="menu-container__mobile-menu-link">Kontakt</a>
+        </li>
+    </ul>
+    <div>
+        <ul class="menu-container__mobile-contact list">
+            <li class="menu-container__mobile-contact-item">
+                <a href="tel:+48111111111" class="menu-container__mobile-contact-phone">+48 111 111 111</a>
             </li>
-            <li class="mobile-social__contact-list">
-                <a href="mailto:info@devstudio.com" class="mobile-social__contact-link--mail">info@devstudio.com</a>
+            <li class="menu-container__mobile-contact-item">
+                <a href="mailto:info@devstudio.com" class="menu-container__mobile-contact-mail">info@devstudio.com</a>
             </li>
         </ul>
-        <ul class="mobile-social__socials-list list">
-            <li class="mobile-social__socials"><a href="#" class="mobile-social__socials-link">Instagram</a><span class="mobile-social__socials-link--line">|</span>
+        <ul class="menu-container__mobile-socialmedia list">
+            <li class="menu-container__mobile-socialmedia-item">
+                <a href="#" class="menu-container__mobile-socialmedia-link" target="_blank"
+                    rel="noreferrer noopener">Instagram</a>
             </li>
-            <li class="mobile-social__socials"><a href="#" class="mobile-social__socials-link">Twitter</a><span class="mobile-social__socials-link--line">|</span>
+            <li class="menu-container__mobile-socialmedia-item">
+                <a href="#" class="menu-container__mobile-socialmedia-link" target="_blank"
+                    rel="noreferrer noopener">Twitter</a>
             </li>
-            <li class="mobile-social__socials"><a href="#" class="mobile-social__socials-link">Facebook</a><span class="mobile-social__socials-link--line">|</span>
+            <li class="menu-container__mobile-socialmedia-item">
+                <a href="#" class="menu-container__mobile-socialmedia-link" target="_blank"
+                    rel="noreferrer noopener">Facebook</a>
             </li>
-            <li class="mobile-social__socials"><a href="#" class="mobile-social__socials-link">Linkedin</a>
-            </link>
+            <li class="menu-container__mobile-socialmedia-item">
+                <a href="#" class="menu-container__mobile-socialmedia-link" target="_blank"
+                    rel="noreferrer noopener">LinkedIn</a>
+            </li>
         </ul>
     </div>
-    <div class="backdrop is-hidden" data-modal>
+</div>
+
+<div class="backdrop is-hidden" data-modal>
+    <!-- modal window form -->
         <div class="modal">
             <button type="button" class="modal__close-btn" data-modal-close>
                 <svg class="modal__icon" width="11" height="11">
@@ -599,8 +615,8 @@
                                 </span>
 
                                 <p class="checkbox__text">Oświadczam iż akceptuję <a href=""
-                                        class="checkbox__links">Regulamin </a>
-                                    i <a href="" class="checkbox__links">Politykę Prywatności.</a></p>
+                                        class="checkbox__links">  Regulamin </a>
+                                      i<a href="" class="checkbox__links">Politykę Prywatności.</a></p>
                             </label>
                             <div class="form-window__button-position"><button class="form-window__button"
                                     type="submit">Wyślij</button>

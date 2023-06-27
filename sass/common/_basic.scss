@@ -13,6 +13,8 @@
     font-family: 'Roboto', sans-serif;
     color: var(--text-color);
     --main-background: var(--main-background);
+    max-width: 1600px;
+  
 }
 
 .h1,
@@ -55,7 +57,7 @@ a:link {
     margin: 0 auto;
     padding: 0 15px;
     max-width: 480px;
-    width: 100%;
+    
 
     @include tablet {
 max-width: 768px

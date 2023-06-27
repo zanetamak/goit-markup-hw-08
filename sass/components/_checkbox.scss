@@ -1,10 +1,19 @@
 .checkbox {
+@include font(400, 12px, 1.7, 0.03em);
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    max-width: 370px;
+
+    
+@include deskop {
     display: block;
     @include font(400, 14px, 1.7, 0.03em);
     margin-bottom: 30px;
     color: grey;
     text-align: center;
     cursor: pointer;
+}
 
     &__input {
         appearance: none;
@@ -29,7 +38,11 @@
     }
 
     &__text {
+display: flex;
+align-items: left;
+        @include deskop {
         display: inline;
+        }
     }
 
     &__links {
@@ -37,6 +50,7 @@
         color: var(--focus-color);
 
     }
+
 }
 
 .checkbox__input:checked+.checkbox__icon {
