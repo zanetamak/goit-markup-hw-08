@@ -1,5 +1,13 @@
-.about {
+.section {
+  padding-bottom: 0;
 
+  @include tablet {
+padding-bottom: 60px;
+  }
+}
+
+.about {
+display: none;
 @include font(700, 36px, 1.2, 0.03em);
     text-align: center;
     margin-bottom: 50px;

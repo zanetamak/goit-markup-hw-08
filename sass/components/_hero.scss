@@ -2,10 +2,11 @@
 
 .hero {
     background-position: center;
-    max-height: 400px;
+height: 400px;
     background-size: cover;
     padding: 118px 0;
     margin: 0 auto;
+
     background-color: rgba(47, 48, 58, 0.4);
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
@@ -25,6 +26,7 @@
             }
 
             @include tablet {
+                height: 400px;
             background-color: rgba(47, 48, 58, 0.4);
                 background-image: linear-gradient(to right,
                         rgba(47, 48, 58, 0.4),
@@ -45,9 +47,11 @@
         }
 
     @include deskop {
-        padding: 200px 0;
+        padding-block: 200px 210px;
+        height: 600px;
+        background-position: center;
         max-width: 1600px;
-        max-height: 600px;
+       
     
         background-color: rgba(47, 48, 58, 0.4);
             background-image: linear-gradient(to right,

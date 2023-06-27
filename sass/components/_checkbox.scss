@@ -1,5 +1,4 @@
 .checkbox {
-@include font(400, 12px, 1.7, 0.36px);
     display: flex;
     align-items: center;
     margin-top: 20px;
@@ -39,13 +38,16 @@
     }
 
     &__text {
-
+@include font(400, 12px, 1.7, 0.36px);
+    color: grey;
       align-items: center;
        padding-left: 23px;
         position: absolute;
+     
 
         @include deskop {
-       
+    @include font(400, 14px, 1.7, 0.36px);
+        color: grey;
    
         }
     }
