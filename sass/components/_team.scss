@@ -1,18 +1,17 @@
 
-
 .team {
    background: #f5f4fa;
-      max-width: 480px;
-         margin: auto;
-  
-         @include tablet {
-            max-width: 768px;
-         }
 
-            @include deskop {
-               max-width: 1600px;
-            }
-         
+   margin: auto;
+
+   @include tablet {
+      max-width: 768px;
+   }
+
+   @include deskop {
+      max-width: 1600px;
+   }
+
 
    &__h2 {
       color: #212121;
@@ -53,13 +52,14 @@
       border-radius: 0px 0px 4px 4px;
 
       @include tablet {
-       
+
          width: 354px;
-      } 
-         @include deskop {
-            width: 270px;
-         }
-      
+      }
+
+      @include deskop {
+         width: 270px;
+      }
+
    }
 
    &__under--photo {
@@ -118,7 +118,7 @@
 }
 
 .team__img {
-         width: 100%;
-         height: auto;
-         object-fit: cover;
+   width: 100%;
+   height: auto;
+   object-fit: cover;
 }

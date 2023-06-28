@@ -12,7 +12,8 @@ display: none;
     display: flex;
    justify-content: center;
     @include font(700, 36px, 1.2, 0.03em);
-      margin-bottom: 50px;
+    
+      padding-bottom: 60px;
   }
 
 
