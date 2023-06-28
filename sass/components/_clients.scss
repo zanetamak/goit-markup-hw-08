@@ -1,77 +1,59 @@
-.client {
- font-style: normal;
-    @include font(700, 36px, 1.7, 0.03em);
-   text-align: center;
-   color: rgba(33, 33, 33, 1);
 
- &__list {
-display: flex;
-gap: 30px;
-justify-content: center;
-flex-wrap: wrap;
-margin: 0 auto;
 
-@include deskop {
-      flex-wrap: nowrap;  /* czy musi być tu wrap? */
-      display: flex;
-      gap: 30px;
-}
- }
+.clients {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 30px;
+   padding-bottom: 45px;
 
- &__items {
-   max-width: 210px;
-      background-color: var(--background);
-      border: 1px solid var(--fill-icon);
+   &__h2 {
+      color: #212121;
+      font-size: 36px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin-bottom: 50px;
+   }
+
+   &__item {
+      max-width: 210px;
+      background-color: #FFF;;
+      border: 1px solid #AFB1B8;
       border-radius: 4px;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
       justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
       padding: 16px 52px;
-   }
- 
-   &__link {
-      fill: grey;
-      width: 106px;
-      height: 60px;
-      order: 1px solid currentColor;
-         color: rgba(175, 177, 184, 1);
-         fill: currentColor;
-         border-radius: 4px;
-         text-align: center;
-         @include flex;
-         justify-content: center;
+
+      @include tablet {
+         max-width: 226px;
+         padding: 16px 60px;
+      }
+
+      @include deskop {
+         max-width: 170px;
+         padding: 16px 32px;
+      }
    }
 
- &__icon {
-width: 106px;
-height: 60px;
-border: 1px solid currentColor;
-color: rgba(175, 177, 184, 1);
-fill: currentColor;
-border-radius: 4px;
-text-align: center;
-@include flex;
-justify-content: center;
+   &__item:hover,
+   &__item:focus {
+      cursor: pointer;
+      border: 1px solid var(--focus-color);
+      transition-duration: var(--default-time);
+      transition-timing-function: var(--default-timing-function);
+   }
 
+   &__logo {
+      fill: #AFB1B8;
+   }
 
-&:hover,
-&:focus {
-border-color: var(--focus-color);
-fill: var(--focus-color);  
-}
-
-@include tablet {
-width: 226px;
-}
-
-@include deskop {
-   width: 170px;
-}
-}
+   &__item:hover &__logo,
+   &__item:focus &__logo {
+      fill: var(--focus-color);
+      transition-duration: var(--default-time);
+      transition-timing-function: var(--default-timing-function);
+   }
 }

@@ -1,12 +1,11 @@
 .footer {
     background: var(--footer-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
+padding: 60px;
     max-width: 1600px;
     margin: auto;
 
     @include deskop {
-        padding: 0 15px;
+        padding: 60px 0;
     }
   
 
@@ -202,6 +201,7 @@ font-family: "Roboto";
     @include deskop {
         flex-direction: column;
         text-align: left;
+        margin-top: 0;
     }
 }
 
